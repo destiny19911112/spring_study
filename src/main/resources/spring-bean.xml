@@ -2,7 +2,9 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
-        default-init-method="defaultInit" default-destroy-method="defaultDestroy">
+       default-autowire="constructor">
 
-    <bean id="beanScope" class="com.xiongxl.BeanScope" init-method="init1" destroy-method="destroy1"></bean>
+    <bean id="autoWiringService" class="com.xiongxl.service.AutoWiringService"></bean>
+
+    <bean id="autoWiringDao111" class="com.xiongxl.dao.AutoWiringDao"></bean>
 </beans>
