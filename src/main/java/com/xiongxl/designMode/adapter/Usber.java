@@ -1,4 +1,4 @@
-package com.xiongxl.DesignMode.Adapter;
+package com.xiongxl.designMode.adapter;
 
 /**
  * @author xiongxl
@@ -7,8 +7,7 @@ package com.xiongxl.DesignMode.Adapter;
  */
 public class Usber implements Usb {
 
-    @Override
     public void isUsb() {
-        System.out.println("I am Usb");
+        System.out.println("I am USB!!!");
     }
 }
