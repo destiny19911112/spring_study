@@ -1,8 +1,8 @@
-package com.xiongxl.DesignMode.Adapter;
+package com.xiongxl.designMode.adapter;
 
 /**
  * @author xiongxl
- * @version $Id: Adapter.java, v 0.1 2019-02-28 18:16 xiongxl Exp $$
+ * @version $Id: adapter.java, v 0.1 2019-02-28 18:16 xiongxl Exp $$
  * @desc
  */
 public class Adapter implements Ps2 {
@@ -13,7 +13,6 @@ public class Adapter implements Ps2 {
         this.usb = usb;
     }
 
-    @Override
     public void isPs2() {
         usb.isUsb();
     }

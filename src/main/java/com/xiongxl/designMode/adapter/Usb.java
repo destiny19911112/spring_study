@@ -1,4 +1,4 @@
-package com.xiongxl.DesignMode.Adapter;
+package com.xiongxl.designMode.adapter;
 
 /**
  * @author xiongxl
