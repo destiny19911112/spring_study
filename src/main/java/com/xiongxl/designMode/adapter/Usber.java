@@ -5,7 +5,7 @@ package com.xiongxl.designMode.adapter;
  * @version $Id: Usber.java, v 0.1 2019-02-28 18:15 xiongxl Exp $$
  * @desc
  */
-public class Usber implements Usb {
+public class Usber implements com.xiongxl.designMode.adapter.Usb {
 
     public void isUsb() {
         System.out.println("I am USB!!!");

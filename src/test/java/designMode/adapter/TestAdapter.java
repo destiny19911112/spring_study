@@ -17,7 +17,7 @@ public class TestAdapter {
 
     @Test
     public void test() {
-        Ps2 ps2 = new Adapter();
+        Ps2 ps2 = new Adapter(new com.xiongxl.designMode.adapter.Usber());
         ps2.isPs2();
     }
 }

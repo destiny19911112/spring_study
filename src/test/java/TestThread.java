@@ -3,6 +3,7 @@
  * Copyright (c) 2013-2019 All Rights Reserved.
  */
 
+import com.xiongxl.bean.CarFactory;
 import com.xiongxl.bean.Zoo;
 import com.xiongxl.thread.*;
 import org.junit.Test;
@@ -61,7 +62,14 @@ public class TestThread {
     @Test
     public void testZoo() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-bean.xml");
-        Zoo zoo = (Zoo) applicationContext.getBean("zoo");
+        Zoo zoo = (Zoo) applicationContext.getBean("Zoo");
         System.out.println(zoo.toString());
+    }
+
+    @Test
+    public void testCar() {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-bean.xml");
+        CarFactory carFactory = (CarFactory) applicationContext.getBean("carFactory");
+        System.out.println(carFactory.toString());
     }
 }
