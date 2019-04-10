@@ -7,7 +7,11 @@ package com.xiongxl.aop;
  */
 public class TimeHandler {
 
-    public void printTime() {
-        System.out.println("CurrentTime：" + System.currentTimeMillis());
+    public void beforePrintTime() {
+        System.out.println("Before Method Invoke, CurrentTime：" + System.currentTimeMillis());
+    }
+
+    public void afterPrintTime() {
+        System.out.println("After Method Invoke, CurrentTime：" + System.currentTimeMillis());
     }
 }

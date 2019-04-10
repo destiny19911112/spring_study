@@ -12,7 +12,7 @@ public class TestAop {
 
     @Test
     public void testAop1() {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-aop.xml");
+        /*ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-aop.xml");
         HelloWorld helloWorld1 = (HelloWorld) applicationContext.getBean("helloWorldImpl1");
         HelloWorld helloWorld2 = (HelloWorld) applicationContext.getBean("helloWorldImpl2");
         helloWorld1.printHelloWorld();
@@ -21,6 +21,10 @@ public class TestAop {
         System.out.println();
         helloWorld2.printHelloWorld();
         System.out.println();
-        helloWorld2.doPrint();
+        helloWorld2.doPrint();*/
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-aop.xml");
+        HelloWorld helloWorld = (HelloWorld) applicationContext.getBean("helloWorldImpl1");
+        helloWorld.printHelloWorld();
+        helloWorld.doPrint();
     }
 }

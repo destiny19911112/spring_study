@@ -13,13 +13,13 @@
         <bean id="logHandler" class="com.xiongxl.aop.LogHandler"></bean>
 
         <aop:config>
-            <aop:aspect id="time" ref="timeHandler" order="1">
+            <aop:aspect id="time" ref="timeHandler" order="2">
                 <aop:pointcut id="addPrintTime" expression="execution(* com.xiongxl.aop.HelloWorld.printHelloWorld(..))"></aop:pointcut>
-                <aop:before method="printTime" pointcut-ref="addPrintTime"></aop:before>
-                <aop:after method="printTime" pointcut-ref="addPrintTime"></aop:after>
+                <aop:before method="beforePrintTime" pointcut-ref="addPrintTime"></aop:before>
+                <aop:after method="afterPrintTime" pointcut-ref="addPrintTime"></aop:after>
             </aop:aspect>
-            <aop:aspect id="log" ref="logHandler" order="2">
-                <aop:pointcut id="addPrintLog" expression="execution(* com.xiongxl.aop.HelloWorld.doPrint(..))"></aop:pointcut>
+            <aop:aspect id="log" ref="logHandler" order="1">
+                <aop:pointcut id="addPrintLog" expression="execution(* com.xiongxl.aop.HelloWorld.printHelloWorld(..))"></aop:pointcut>
                 <aop:before method="LogBefore" pointcut-ref="addPrintLog"></aop:before>
                 <aop:after method="LogAfter" pointcut-ref="addPrintLog"></aop:after>
             </aop:aspect>
