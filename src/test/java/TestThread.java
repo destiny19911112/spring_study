@@ -1,8 +1,3 @@
-/**
- * ymm56.com Inc.
- * Copyright (c) 2013-2019 All Rights Reserved.
- */
-
 import com.xiongxl.bean.CarFactory;
 import com.xiongxl.bean.Zoo;
 import com.xiongxl.thread.*;

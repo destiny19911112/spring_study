@@ -1,8 +1,3 @@
-/**
- * ymm56.com Inc.
- * Copyright (c) 2013-2019 All Rights Reserved.
- */
-
 import com.xiongxl.BeanScope;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
